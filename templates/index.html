@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <h1>CRUD USING PHP AND JAVASCRIPT FETCH API</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h4>Staff(44)</h4>
+                <button class="btn btn-primary" id="create">Add Staff</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Country</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="modal" id="create-staff">
+        <div class="modal-body">
+            <h3>Creating Staff</h3>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" autofocus autocomplete="off" id="name" name="name" class="form-control" placeholder="Your name...............">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" min="1" max="150" autofocus autocomplete="off" id="age" name="age" class="form-control" placeholder="Your age...............">
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" autofocus autocomplete="off" id="country" name="country" class="form-control" placeholder="Your country...............">
+            </div>
+            <div class="form-group buttons">
+                <button class="btn btn-primary" id="save">Save</button>
+                <button class="btn btn-danger" type="button" id="close">Exit</button>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="modal" id="edit-staff">
+        <div class="modal-body">
+            <h3>Editting Staff</h3>
+            
+            <div class="form-group">
+                <label for="id">This item has an ID</label>
+                <input type="text" disabled id="id" name="id" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" autofocus autocomplete="off" id="edit-name" name="name" class="form-control" placeholder="Your name...............">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" min="1" max="150" autofocus autocomplete="off" id="edit-age" name="age" class="form-control" placeholder="Your age...............">
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" autofocus autocomplete="off" id="edit-country" name="country" class="form-control" placeholder="Your country...............">
+            </div>
+            <div class="form-group buttons">
+                <button class="btn btn-primary" type="submit" id="update">Update</button>
+                <button class="btn btn-danger" type="button" id="close-edit">Exit</button>
+            </div>
+
+        </div>
+    </div>
+
+
+   <script src="js/script.js"></script> 
+</body>
+</html>
